@@ -1,3 +1,54 @@
 body {
   background: red;
+  font-family: 'PT Sans Narrow', Arial, sans-serif;
+  font-size: 18px;
+  line-height: 27px;
+  font-weight: 700;
+  margin: 0;
+  padding: 0;
+}
+/*цвета фонов*/
+/*цвета меню */
+/*отступы*/
+/*шрифт*/
+.page-header {
+  background-color: #242424;
+  margin: 0;
+  padding: 0;
+}
+.page-header__logo {
+  display: block;
+  padding-top: 29px;
+  padding-bottom: 25px;
+}
+.main-nav {
+  margin: 0;
+  padding: 0;
+  font-size: 18px;
+  line-height: 24px;
+  background-color: #6a4d38;
+  text-transform: uppercase;
+}
+.main-nav__wrapper {
+  margin: 0;
+  padding: 0;
+}
+.site-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.site-list__item {
+  display: block;
+  padding-left: 20px;
+  padding-top: 14px;
+  padding-bottom: 15px;
+  background-color: #826550;
+  border-top: 1px solid #886e5b;
+  border-bottom: 1px solid #71543f;
+  cursor: pointer;
+}
+.site-list__item a {
+  color: #ffffff;
+  text-decoration: none;
 }
