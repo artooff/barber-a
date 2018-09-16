@@ -1,3 +1,42 @@
-.page-main{
-	background-color: green;
+.stats{
+	.indents(0);
+	
+	background-color: #ffffff;
+}
+
+.stats__header{
+	padding-top: 32px;
+}
+
+.stats__slogan{
+	.font(30px, 30px);
+	font-weight: 700;
+	margin-bottom: 22px;
+}
+
+.stats__intro{
+	margin-bottom: 28px;
+	.font(20px, 27px);
+}
+
+.stats__list{
+	color: #ffffff;
+	border-collapse: collapse; 
+}
+
+.stats__value{
+	.font(40px, 18px);
+	font-weight: 700;
+}
+
+.stats__field{
+	.font(18px, 18px);
+}
+
+.stats__item:nth-child(odd){ /* нечетные строки */
+	background-color: @dark3;
+}
+
+.stats__item:nth-child(even){ /* нечетные строки */
+	background-color: @dark4;
 }

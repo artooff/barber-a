@@ -3,12 +3,33 @@
 .main-nav{
 	.indents(0);
 	.font(18px, 24px);
+	font-weight: 700;
 	
-	background-color: @menu1;
 	text-transform: uppercase;
 	
 }
 
 .main-nav__wrapper{
 	.indents(0);
+}
+
+.main-nav__toggle{
+	display: flex;
+	width: 70px;
+	height: 50px;
+	justify-content: center;
+	align-items: center;
+	
+	font-size: 0;
+	
+	background-color: @menu-active;
+	border: none;
+	
+	cursor: pointer;
+	
+}
+
+.main-nav__toggle:hover,
+.main-nav__toggle:active{
+	background-color: @menu-button;
 }

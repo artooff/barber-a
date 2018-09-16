@@ -1,3 +1,6 @@
+@menu-hover: #755a46;
+@menu-active: #6a4d38;
+
 .site-list{
 	.indents(0);
 	list-style: none;
@@ -18,4 +21,12 @@
 .site-list__item a{
 	color: #ffffff;
 	text-decoration: none;
+}
+
+.site-list__item:hover{
+	background-color: @menu-hover;
+}
+
+.site-list__item:active{
+	background-color: @menu-active;
 }

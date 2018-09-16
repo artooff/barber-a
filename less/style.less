@@ -1,14 +1,27 @@
-.indents(0){
-	margin: 0;
-	padding: 0;
-}
 body{
-	background: red;
+	background: #ffffff;
 	font-family: 'PT Sans Narrow', Arial, sans-serif;
 	font-size: 18px;
 	line-height: 27px;
-	font-weight: 700;
+	font-weight: 400;
 	.indents(0);
+	
+}
+
+.visually-hidden:not(:focus):not(:active),  /* !!!!!! */
+input[type="checkbox"].visually-hidden,
+input[type="radio"].visually-hidden{
+	position: absolute;
+	
+	width: 1px;
+	height: 1px;
+	margin: -1px;
+	border: 0;
+	padding: 0;
+	
+	white-space: nowrap;
+	clip-path: inset(100%);
+	overflow: hidden;
 	
 }
 
@@ -16,3 +29,9 @@ body{
 @import "blocks/page-header.less";
 @import "blocks/main-nav.less";
 @import "blocks/site-list.less";
+@import "blocks/user-list.less";
+@import "blocks/stats.less";
+@import "blocks/advantages.less";
+@import "blocks/slider.less";
+@import "blocks/news.less";
+@import "blocks/button.less";
