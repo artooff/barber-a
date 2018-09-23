@@ -16,6 +16,10 @@
 /*цвет рамок*/
 @border: #e5ddd5;
 
+/*размеры вьюпорта*/
+@tablet-width: 768px;
+@desktop-width: 1200px;
+
 /*отступы*/
 .indents(0){
 	margin: 0;
@@ -26,3 +30,14 @@
 	font-size: @value1;
 	line-height: @value2;
 }
+
+.size(@value1, @value2){
+	width: @value1;
+	height: @value2;
+}
+
+/* @media (min-width: @tablet-width){
+	.mobile-element{
+		display: none;
+		}
+}	*/

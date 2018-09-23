@@ -1,13 +1,19 @@
 .user-list{
 	.indents(0);
 	list-style: none;
+	
+	
 }
 
-.user-list__item{
+.user-list a{
 	display: block;
 	padding-left: 20px;
 	padding-top: 14px;
 	padding-bottom: 15px;
+	
+	color: #ffffff;
+	text-transform: none;
+	text-decoration: none;
 	
 	background-color: @menu2;
 	border-top: 1px solid @menu-border-top;
@@ -15,13 +21,7 @@
 	cursor: pointer;
 }
 
-.user-list__item a{
-	color: #ffffff;
-	text-transform: none;
-	text-decoration: none;
-}
-
-.user-list__item:hover{
+.user-list a:hover{
 	background-color: @menu-hover;
 }
 
@@ -31,4 +31,19 @@
 
 .user-list__icon{
 	margin-right: 13px;
+	svg{
+		fill: red;
+	}
+}
+
+@media (min-width: @tablet-width){
+	.user-list{
+		width: 60px;
+	}
+}
+
+@media (min-width: @desktop-width){
+	.user-list{
+		width: 160px;
+	}
 }
