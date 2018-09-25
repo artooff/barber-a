@@ -13,7 +13,7 @@
 			<img  class="page-header__logo-image mobile-element" src="img/logotype-mobile.svg" width="226" height="30" alt="Барбершоп Бородинский ">
 		</a>
 
-	<nav class="main-nav main-nav--closed">
+	<nav class="main-nav main-nav--closed main-nav--nojs">
 		<button class="main-nav__toggle" type="button">
 			<span class="visually-hidden">Открыть меню
 			</span>
@@ -44,7 +44,7 @@
 			<ul class="main-nav__list user-list">
 				<li class="user-list__item">
 					<a class="user-list__login" href="login.html">
-					<svg class="user-list__icon" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="16" height="16" viewBox="0 0 16 16"><metadata><?xpacket begin="﻿" id="W5M0MpCehiHzreSzNTczkc9d"?><x:xmpmeta xmlns:x="adobe:ns:meta/" x:xmptk="Adobe XMP Core 5.6-c138 79.159824, 2016/09/14-01:09:01"><rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"> <rdf:Description rdf:about=""/> </rdf:RDF></x:xmpmeta><?xpacket end="w"?></metadata><defs> <style>.cls-1 { opacity: 0.3;} </style></defs> <image id="login-mobile.svg" class="cls-1" width="16" height="16" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAQAAAC1+jfqAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAAmJLR0QAAKqNIzIAAAAJcEhZcwAACxIAAAsSAdLdfvwAAAAHdElNRQfiCQ8PKCihnyNjAAAAnUlEQVQoz2WQsQoCQQxEX5Zw551gL+g/CFpZWIjfvq2t4DcIForC7bFWeklMN5PJDBOpmBFOtMgPF4rix65BUaleMCfxpSp7ZtHh6VCB5IiOpcMpCl7s2HhLRRCTOrBGOFvBEaUaDCuYJErP/ywmVyW75lsaHuTJU7m524Y7mRGXaWteufg0X/Md1jUKwt+RGCEc6MxX2iiA3jEjwwedgyK01yGkuQAAAABJRU5ErkJggg=="/></svg>
+					<svg class="user-list__login-icon" width="16" height="16" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><polygon points="0 7 7.01 7 7.01 4.06 10.96 8.01 7.01 11.91 7.01 9.06 0 9.02 0 7"/><polygon points="7.01 0 7.01 2 14.03 2 14.03 13.99 7.01 13.99 7.01 16 16 16 16 0 7.01 0"/></svg>
 					Вход</a>
 				</li>
 			</ul>
@@ -165,7 +165,7 @@
 
             <blockquote class="reviews__item  slider__item">
               <p class="reviews__author-picture">
-                <img class="reviews__author-image" src="img/picture-travis.jpg" width="50" height="33" alt="Фото Трэвиса Баркера">
+                <img class="reviews__author-image" src="" width="50" height="33" alt="Фото Трэвиса Баркера">
               </p>
               <cite class="reviews__author-name">Трэвис Баркер</cite>
               <p class="reviews__text">Спасибо за лысину! Был проездом в Москве, заскочил побриться, чтобы было видно новую татуировку!</p>
@@ -173,7 +173,7 @@
 
             <blockquote class="reviews__item  slider__item">
               <p class="reviews__author-picture">
-                <img class="reviews__author-image" src="img/picture-john.jpg" width="50" height="33" alt="Фото Джона Смита">
+                <img class="reviews__author-image" src="" width="50" height="33" alt="Фото Джона Смита">
               </p>
               <cite class="reviews__author-name">Джон Смит</cite>
               <p class="reviews__text">Отличную стрижку мне сделали ребята.</p>
@@ -181,7 +181,7 @@
 
             <blockquote class="reviews__item  slider__item">
               <p class="reviews__author-picture">
-                <img class="reviews__author-image" src="img/picture-ivan.jpg" width="50" height="33" alt="Фото Ивана Бородайло">
+                <img class="reviews__author-image" src="" width="50" height="33" alt="Фото Ивана Бородайло">
               </p>
               <cite class="reviews__author-name">Иван Бородайло</cite>
               <p class="reviews__text">В Бородинском ваша борода в надёжных руках!</p>
@@ -234,6 +234,22 @@
 			</div>
 		</div>
 	</footer>
- 
+ <script>
+ 	var navMain = document.querySelector('.main-nav');
+ 	var navToggle = document.querySelector('.main-nav__toggle');
+
+ 	navMain.classList.remove('main-nav--nojs');
+
+ 	navToggle.addEventListener('click', function(){
+ 		if (navMain.classList.contains('main-nav--closed')) {
+ 			navMain.classList.remove('main-nav--closed');
+ 			navMain.classList.add('main-nav--opened');
+ 		}
+ 		else {
+ 			navMain.classList.add('main-nav--closed');
+ 			navMain.classList.remove('main-nav--opened');
+ 		}
+ 	});
+ </script>
 </body>
 </html>

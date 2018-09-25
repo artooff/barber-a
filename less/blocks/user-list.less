@@ -5,9 +5,11 @@
 	
 }
 
-.user-list a{
+.user-list__login{
+	position: relative;
+	
 	display: block;
-	padding-left: 20px;
+	padding-left: 40px;
 	padding-top: 14px;
 	padding-bottom: 15px;
 	
@@ -15,35 +17,133 @@
 	text-transform: none;
 	text-decoration: none;
 	
-	background-color: @menu2;
 	border-top: 1px solid @menu-border-top;
 	border-bottom: 1px solid @menu-border-bottom;
 	cursor: pointer;
 }
 
-.user-list a:hover{
+.user-list__login:hover{
 	background-color: @menu-hover;
 }
 
-.user-list__item:active{
+.user-list__login:active{
 	background-color: @menu-active;
 }
 
-.user-list__icon{
-	margin-right: 13px;
-	svg{
-		fill: red;
+.user-list__login-icon{
+	position :absolute;
+	
+	left: 13px;
+	top: 16px;
+	width: 13px;
+	height: 16px;
+	
+	opacity: 0.3;
+	
+	polygon{
+		fill: #ffffff;
+	}
+}
+@media (max-width: @mobile-width-only){
+	.user-list a{
+		background-color: @menu-active;
+		border: none;
 	}
 }
 
 @media (min-width: @tablet-width){
 	.user-list{
 		width: 60px;
+		
+		
 	}
+
+	.user-list__login{
+		width: 60px;
+		height: 70px;
+		padding: 0;
+		font-size: 0;
+		
+		background-color: #000000;
+		border: none;
+	}
+
+	.user-list__login-icon{
+		top: 29px;
+		left: 12px;
+		
+
+	}
+
+	.user-list__login:hover{
+		background-color: #000000;
+		
+		.user-list__login-icon{
+			opacity: 1;
+			
+			polygon{
+				fill: #826550;
+			}
+		}
+	}
+
+	.user-list__login:active{
+		opacity: 0.3;
+		
+		.user-list__login-icon{
+			polygon{
+				fill: #ffffff;
+			}
+		}
+	}
+
 }
+
+
+
 
 @media (min-width: @desktop-width){
 	.user-list{
-		width: 160px;
+		width: auto;
+		max-width: 160px;
 	}
+
+	.user-list__login{
+		position: relative;
+		
+		width: auto;
+		height: auto;
+		padding: 25px 30px 23px 50px;
+		
+		.font(18px, 24px);
+		font-weight: 700;
+		text-transform: uppercase;
+		text-decoration: none;
+		
+		&:hover{
+			color: #000000;
+			
+			background-color: #ffffff;
+		}
+
+		&:active{
+			color: rgba(0, 0, 0, 0.3);
+			
+			background-color: #ffffff;
+		}
+
+		&:hover .user-list-login__icon {
+			opacity: 0.3;
+			
+			polygon{
+				fill: #000000;
+			}
+		}
+
+		&:active .user-list-login__icon{
+			opacity: 0.1;
+		}
+	}
+	
+
 }
