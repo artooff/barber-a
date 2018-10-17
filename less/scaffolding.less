@@ -13,13 +13,19 @@
 }
 
 body{
-	background: #ffffff;
+	background-color: #f8f5f2;
 	font-family: 'PT Sans Narrow', Arial, sans-serif;
 	font-size: 18px;
 	line-height: 27px;
 	font-weight: 400;
 	.indents(0);
 	
+}
+
+@media (min-width: @desktop-width){
+	body{
+		background-color: @dark3;
+	}
 }
 
 .visually-hidden:not(:focus):not(:active),  /* !!!!!! */
@@ -37,4 +43,8 @@ input[type="radio"].visually-hidden{
 	clip-path: inset(100%);
 	overflow: hidden;
 	
+}
+
+.mobile-only{
+	display: none;
 }

@@ -18,11 +18,50 @@
 	color: #ffffff;
 	text-decoration: none;
 	
-	border: 1px solid @border;
+	border: 1px solid #3e3e3e;
 	
 }
+
+.contacts__phone:hover{
+	border-color: #515151;
+	
+}
+
+.contacts__phone:active{
+	opacity: 0.3;
+	border: none;
+}
+
 
 .contacts__phone--mobile{
 	display: none;
 }
+
+@media (min-width: @tablet-width){
+	.contacts{
+		width: 340px;
+		text-align: left;
+	}
+
+	.contacts__title{
+		text-transform: uppercase;
+		margin-bottom: 20px;
+	}
+
+	.contacts__phone{
+		display: inline;
+		
+		padding: 0;
+		margin: 0;
+		
+		border: none;
+	}
+}
+
+@media (min-width: @desktop-width){
+	.contacts__phone--mobile{
+		display: inline;
+	}
+}
+
 

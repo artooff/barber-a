@@ -2,7 +2,34 @@
 	color: #ffffff;
 }
 
+.copyright__text{
+	display: block;
+	text-align: center;
+	margin-bottom: 15px;
+}
+
 .copyright__link{
-	padding: 13px 90px 16px 90px;
+	display: block;
+	
+	margin: 0 auto;
+	padding-top: 14px;
+	padding-bottom: 15px;
+	width: 280px;
+	
 	.font(18px, 24px);
+	color: #ffffff;
+	text-transform: uppercase;
+	text-align: center;
+	
+	border: 1px solid #3e3e3e;
+	
+	cursor: default;
+}
+
+
+@media (min-width: @tablet-width){
+	.copyright__link{
+		
+		width: 160px;
+		}
 }
