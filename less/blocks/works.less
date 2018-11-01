@@ -1,0 +1,295 @@
+.works{
+	width: 280px;
+	margin: 0 auto;
+	padding-top: 34px;
+	padding-bottom: 30px;
+	background-color: #f8f5f2;
+}
+
+.works__list{
+	
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	
+}
+
+.works__title{
+	margin: 0;
+	margin-bottom: 35px;
+	
+	.font(30px, 30px);
+	text-align: center;
+	text-transform: uppercase;
+	
+}
+
+.works__item{
+	position: relative;
+	width: auto;
+	padding: 0;
+	margin-bottom: 20px;
+	
+	border: 1px solid #e5ddd5;
+	border-top: none;
+	
+}
+
+.works__photo{
+	
+	margin-bottom: 20px;
+}
+
+
+
+.works__name{
+	margin-bottom: 20px;
+	
+	.font(24px, 27px);
+	font-style: normal;
+	font-weight: 700;
+}
+
+.works__text{
+	padding-left: 22px;
+	padding-right: 22px;
+}
+
+.works__include{
+	display: flex;
+	flex-wrap: wrap;
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+.works__include li{
+	.font(16px, 27px);
+	text-transform: uppercase;
+	
+	margin-right: 35px;
+	margin-bottom: 15px;
+	
+	background-repeat: no-repeat;
+	
+}
+
+.works__include li:nth-child(2){
+	margin-right: 0;
+}
+
+.works__haircut{
+	padding-left: 35px;
+	background-image: url('../img/scissors-icon.svg');
+	background-position: 0 3px;
+}
+
+.works__shaving{
+	padding-left: 45px;
+	background-image: url('../img/beard-icon.svg');
+}
+
+.works__mustache{
+	margin-left: -10px;
+	padding-left: 58px;
+	background-image: url('../img/mustache-icon.svg');
+	background-position: 0 7px;
+	
+}
+
+.works__label{
+	position: absolute;
+	
+	left: 0;
+	top: 400px;
+	box-sizing: border-box;
+	width: 166px;
+	height: 50px;
+	padding-top: 10px;
+	
+	.font(20px, 27px);
+	font-weight: 700;
+	color: #ffffff;
+	text-transform: uppercase;
+	text-align: center;
+	
+	
+	background-color: #826550;
+}
+
+.works__label::before,
+.works__label::after{
+	content: "";
+	position: absolute;
+	right: -8px;
+	width: 0;
+	height: 0;
+	
+	
+	
+	border-right: 8px solid transparent; 
+}
+
+.works__label::before{
+	top: 0;
+	border-top: 23px solid #826550; 
+}
+
+.works__label::after{
+	bottom: 0;
+	border-bottom: 23px solid #826550; 
+}
+.works__button{
+	display: none;
+}
+
+
+
+@media (min-width: @tablet-width){
+	.works{
+		width: 640px;
+		padding-top: 64px;
+	}
+
+	.works__top-wrapper{
+		display: flex;
+		justify-content: space-between;
+	}
+
+	.works__title{
+		height: 44px;
+		padding-top: 5px;
+		margin-bottom: 50px;
+		.font(40px, 40px);
+		text-align: left;
+	}
+
+	.works__button{
+		display: block;
+		
+		box-sizing: border-box;
+		width: 160px;
+		height: 50px;
+		padding-top: 12px;
+		margin-top: 0;
+		
+		text-align: center;
+	}
+
+	.works__item{
+		display: flex;
+		position: relative;
+		
+		
+		min-height: 293px;
+		border: 1px solid #e5ddd5;
+		
+	}
+	
+
+	.works__text{
+		width: 369px;
+		padding-top: 49px;
+		padding-left: 49px;
+
+	}
+
+
+	.works__photo{
+		margin: 0;
+		vertical-align: bottom;
+	}
+
+
+	.works__review{
+		width: 270px;
+	}
+
+	.works__include{
+		position: absolute;
+		bottom: 40px;
+		
+		width: 230px;
+	}
+
+	.works__label{
+		top: 35px;
+		right: 0;
+	}
+}
+
+@media (min-width: @desktop-width){
+	.works{
+		width: 960px;
+		
+	}
+	
+	.works__wrapper{
+		display: flex;
+		justify-content: space-between;
+		
+		width: 100%;
+	}
+	.works__button{
+		margin-left: 570px;
+	}
+	
+	.works__item{
+		display: block;
+		width: 294px;
+		min-height: 540px;
+		
+		
+	}
+
+	.works__text{
+		
+		padding-top: 30px;
+		padding-left: 38px;
+		width: auto;
+		
+	}
+	
+	.works__include{
+		position: absolute;
+		bottom: 20px;
+	
+	}
+	
+	.works__include li:nth-child(2){
+		margin-right: 30px;
+	}
+
+	.works__item--main{
+		display: flex;
+		width: 960px;
+		min-height: 480px;
+		margin-bottom: 40px;
+		
+	}
+
+
+	.works__item--main .works__text{
+		display: block;
+		width: 479px;
+		
+		padding-top: 128px;
+	}
+
+	.works__item--main .works__include{
+		position: absolute;
+		width: 360px;
+	}
+	
+	.works__label{
+		top: 25px;
+		
+	}
+
+	
+	
+
+	
+
+	
+}

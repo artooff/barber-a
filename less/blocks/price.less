@@ -1,0 +1,194 @@
+.price{
+	width: 100%;
+	padding-top: 30px;
+	padding-bottom: 20px;
+	
+	background-color: #353535;
+}
+
+.price__wrapper{
+	width: 280px;
+	padding: 0;
+	margin: 0 auto;
+}
+
+.price__list{
+	margin: 0;
+	margin-bottom: 25px;
+	width: 100%;
+	
+	color: #ffffff;
+	
+	border-collapse: collapse;
+	
+}
+
+.price__title{
+	text-align: center;
+	
+	.font(30px, 30px);
+	color: #ffffff;
+	text-transform: uppercase;
+}
+
+
+
+.price__number{
+	display: none;
+}
+
+.price__field{
+	padding-left: 0;
+	
+	
+	font-weight: 700;
+}
+
+.price__value{
+	padding-right: 0;
+	
+	text-align: right;
+	vertical-align: top;
+}
+
+.price__add{
+	font-weight: 400;
+}
+
+.price__discount{
+	display: block;
+	box-sizing: border-box;
+	
+	margin: 0;
+	
+	width: 100%;
+	padding: 18px 48px 17px 112px;
+	
+	color: #ffffff;
+	
+	background-color: transparent;
+	background-image: url("../img/clock.svg");
+	background-repeat: no-repeat;
+	background-position: 20px center;
+	
+	border: 1px solid #4a4a4a;
+	
+
+}
+
+@media (min-width: @tablet-width){
+	.price__wrapper{
+		width: 640px;
+		padding-bottom: 35px;
+	}
+	.price__list{
+		width: 640px;
+		box-sizing: border-box;
+		margin-bottom: 10px;
+		
+		border: 1px solid #4a4a4a;
+	}
+
+	.price__title{
+		.font(40px, 30px);
+		margin-bottom: 55px;
+		
+		text-align: left;
+	}
+	
+
+	.price__field,
+	.price__value{
+		padding-top: 13px;
+		padding-bottom: 14px;
+		padding-left: 20px;
+		
+		text-align: left;
+		border: 1px solid #4a4a4a;
+	}
+
+	.price__number{
+		display: table-cell;
+		
+		width: 70px;
+		padding-top: 13px;
+		padding-bottom: 14px;
+		
+		text-align: center;
+		color: #7b7b7b;
+		
+		border: 1px solid #4a4a4a;
+		
+	}
+
+	.price__value{
+		width: 160px;
+	}
+	
+	.price__add{
+		margin-left: 55px;
+		padding: 17px 20px 18px 20px;
+		border-left: 1px solid #4a4a4a;
+	}
+	
+	.price__field br{
+		display: none;
+	}
+	
+	.price__discount{
+		padding-left: 185px;
+		padding-top: 40px;
+		padding-bottom: 40px;
+		
+		.font(30px, 27px);
+		font-weight: 700;
+		text-transform: uppercase;
+		
+		background-image: url("../img/clock2.svg");
+		background-position: 25px center;
+	}
+
+}
+
+@media (min-width: @desktop-width){
+	.price{
+		padding-top: 70px;
+	}
+
+	.price__wrapper{
+		width: 960px;
+	}
+	
+	.price__blocks{
+		display: flex;
+		justify-content: space-between;
+	}
+	.price__list{
+		margin-left: 0;
+	}
+
+	.price__value{
+		width: 150px;
+	}
+
+	.price__discount{
+		margin-right: 0;
+		.size(269px, 276px);
+		padding: 0;
+		padding-top: 205px;
+		
+		background-image: url("../img/clock3.svg");
+		background-position: center 35px;
+	}
+
+	.price__text{
+		display: block;
+		width: 125px;
+		margin: 0 auto;
+		
+		.font(20px, 27px);
+		font-weight: 400;
+		text-transform: none;
+		text-align: center;
+	}
+}

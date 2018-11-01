@@ -1,8 +1,6 @@
 
 
 .slider-list{
-	
-	
 	list-style: none;
 }
 
@@ -48,5 +46,19 @@
 
 .slider__toggle--current::before{
 	background-color: #ffffff;
+}
+
+@media (max-width: @mobile-width-only){
+	.slider__item{
+		display: none;
+	}
+
+	.slider__item--current{
+		display: block;
+	}
+
+	.slider--nojs .slider__item{
+		display: block;
+	}
 }
 
